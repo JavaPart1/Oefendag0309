@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="navWrapper">
+        <div class="navleft">
+            <div class="linkwrapper activenavlink"><a href="index.html">Home</a></div>
+            <div class="linkwrapper"><a href="about.html">About</a></div>
+        </div>
+        <div class="navright">
+            <div class="brand">
+                <div>Brand Name</div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contentwrapper">
+        <div class="portfolioitemswrapper">
+            <div class="portfolioitemwrapper">
+                <div class="portfolioimgbackground" style="background-image:url(images/anouck.jpg)">
+
+                </div>
+
+                <div class="imgtextbackground">
+                    <div class="imgtxtwrap">
+                        <div class="logowrapper">
+                            <img src="images/check.png">
+                        </div>
+                        <div class="subtitle">
+                            @ copyright
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolioitemwrapper">
+                <div class="portfolioimgbackground" style="background-image:url(images/elise_crombez.jpg)">
+
+                </div>
+
+                <div class="imgtextbackground">
+                    <div class="imgtxtwrap">
+                        <div class="logowrapper">
+                            <img src="images/check.png">
+                        </div>
+                        <div class="subtitle">
+                            @ copyright
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolioitemwrapper">
+                <div class="portfolioimgbackground" style="background-image:url(images/hanne.jpg)">
+
+                </div>
+
+                <div class="imgtextbackground">
+                    <div class="imgtxtwrap">
+                        <div class="logowrapper">
+                            <img src="images/check.png">
+                        </div>
+                        <div class="subtitle">
+                            @ copyright
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolioitemwrapper">
+                <div class="portfolioimgbackground" style="background-image:url(images/hannelore.jpg)">
+
+                </div>
+
+                <div class="imgtextbackground">
+                    <div class="imgtxtwrap">
+                        <div class="logowrapper">
+                            <img src="images/check.png">
+                        </div>
+                        <div class="subtitle">
+                            @ copyright
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolioitemwrapper">
+                <div class="portfolioimgbackground" style="background-image:url(images/jennifer.jpg)">
+
+                </div>
+
+                <div class="imgtextbackground">
+                    <div class="imgtxtwrap">
+                        <div class="logowrapper">
+                            <img src="images/check.png">
+                        </div>
+                        <div class="subtitle">
+                            @ copyright
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolioitemwrapper">
+                <div class="portfolioimgbackground" style="background-image:url(images/jill.jpg)">
+
+                </div>
+
+                <div class="imgtextbackground">
+                    <div class="imgtxtwrap">
+                        <div class="logowrapper">
+                            <img src="images/check.png">
+                        </div>
+                        <div class="subtitle">
+                            @ copyright
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolioitemwrapper">
+                <div class="portfolioimgbackground" style="background-image:url(images/louise.jpg)">
+
+                </div>
+
+                <div class="imgtextbackground">
+                    <div class="imgtxtwrap">
+                        <div class="logowrapper">
+                            <img src="images/check.png">
+                        </div>
+                        <div class="subtitle">
+                            @ copyright
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolioitemwrapper">
+                <div class="portfolioimgbackground" style="background-image:url(images/marie.jpg)">
+
+                </div>
+
+                <div class="imgtextbackground">
+                    <div class="imgtxtwrap">
+                        <div class="logowrapper">
+                            <img src="images/check.png">
+                        </div>
+                        <div class="subtitle">
+                            @ copyright
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolioitemwrapper">
+                <div class="portfolioimgbackground" style="background-image:url(images/rose.jpg)">
+
+                </div>
+
+                <div class="imgtextbackground">
+                    <div class="imgtxtwrap">
+                        <div class="logowrapper">
+                            <img src="images/check.png">
+                        </div>
+                        <div class="subtitle">
+                            @ copyright
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+    const portfolioitems = document.querySelectorAll('.portfolioitemwrapper');
+
+    portfolioitems.forEach(item => {
+    item.addEventListener('mouseover', () => {
+    console.log(item.childNodes[1].classList);
+    item.childNodes[1].classList.add('imgdarken');
+    })
+    item.addEventListener('mouseout', () => {
+    console.log(item.childNodes[1].classList);
+    item.childNodes[1].classList.remove('imgdarken');
+    })
+    })
+</script>
+</html>
